@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Inventory Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book Inventory Management</h1>
+        <div class="form">
+            <select id="bookName" required>
+                <option value="" disabled selected>Select Book Level</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Elementary">Elementary</option>
+                <!-- Add other book options here -->
+            </select>
+            <input type="number" id="quantity" placeholder="Quantity" required>
+            <button onclick="addBook()">Add Book</button>
+            <button onclick="sellBook()">Sell Book</button>
+        </div>
+        <h2>Current Inventory</h2>
+        <div id="inventoryList"></div>
+        <h2>Statistics</h2>
+        <div id="statisticsList"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
